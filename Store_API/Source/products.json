@@ -1,0 +1,28 @@
+{
+    "product": [
+        {
+            "name": "Apple",
+			"amount": "20"
+        },
+        {
+            "name": "Orange",
+			"amount": "50"
+        },
+        {
+            "name": "Mango",
+			"amount": "40"
+        },
+        {
+            "name": "Melons",
+			"amount": "60"
+        },
+        {
+            "name": "Banana",
+			"amount": "70"
+        },
+        {
+            "craft": "Kiwi",
+            "name": "25"
+        }
+    ]
+}
