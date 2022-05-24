@@ -15,15 +15,23 @@ class Transaction:
             self,status,purchase):
         self.status = status
         self.purchase = purchase
-"""   
-    
-        
-        
-        
-    s = Store("Apple")
-    
-    s.get_data()
-    
-    s.put_data(15)
-    
-    s.get_data()
+""" 
+
+print("Products Available\n")
+
+store_obj = Store(1)
+  
+store_obj.get_products()
+
+
+var1 = input("Enter the Product name: ")
+
+
+#Display data 
+store_obj.get_data(var1)
+
+var2 = int(input("Enter the amount to purchase: "))
+
+store_obj.put_data(store_obj.initial_amount-var2)
+ 
+store_obj.get_data(var1)

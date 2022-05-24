@@ -1,28 +1,24 @@
 {
-    "product": [
-        {
-            "name": "Apple",
-			"amount": "20"
-        },
-        {
-            "name": "Orange",
-			"amount": "50"
-        },
-        {
-            "name": "Mango",
-			"amount": "40"
-        },
-        {
-            "name": "Melons",
-			"amount": "60"
-        },
-        {
-            "name": "Banana",
-			"amount": "70"
-        },
-        {
-            "craft": "Kiwi",
-            "name": "25"
-        }
-    ]
+    "Products": [
+        "Apple",
+        "Banana",
+        "Kiwi",
+        "Mango",
+        "Orange"
+    ],
+    "Apple": {
+        "amount": 20
+    },
+    "Banana": {
+        "amount": 40
+    },
+    "Kiwi": {
+        "amount": 35
+    },
+    "Mango": {
+        "amount": 20
+    },
+    "Orange": {
+        "amount": 45
+    }
 }
