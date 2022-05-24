@@ -14,11 +14,11 @@ $python3 Transaction.py --shopstatus
 
 Status of the Shop
 
-/Apple/50
-/Banana/40
-/Kiwi/30
-/Mango/55
-/Orange/65
+/Apple/50 <br/>
+/Banana/40 <br/>
+/Kiwi/30 <br/>
+/Mango/55 <br/>
+/Orange/65 <br/>
 
 
 
