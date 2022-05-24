@@ -1,0 +1,24 @@
+{
+    "Apple": {
+        "amount": "15"
+    },
+    "Banana": {
+        "amount": "40"
+    },
+    "Kiwi": {
+        "amount": "25"
+    },
+    "Mango": {
+        "amount": "55"
+    },
+    "Orange": {
+        "amount": "65"
+    },
+    "Products": [
+        "Apple",
+        "Banana",
+        "Kiwi",
+        "Mango",
+        "Orange"
+    ]
+}

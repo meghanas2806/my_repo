@@ -2,7 +2,7 @@
 """
 Created on Mon May 23 23:39:58 2022
 
-@author: megha
+@author: Meghana Suresh
 """
 
 from Store import Store
@@ -22,12 +22,12 @@ if __name__ == "__main__":
         for curr_arg, curr_val in arg:
             if  curr_arg in ("-s", "--shopstatus"):
                 print("Status of the Shop\n")
-                store_obj = Store(1)
+                store_obj = Store(1) #To get status of the shop
                 store_obj.get_products()
             elif curr_arg in ("-b", "--buy"):
                 if (len(sys.argv[2]) > 0 and len(sys.argv[3]) > 0
                         and int(sys.argv[3]) > 0):
-                    store_obj = Store(0)
+                    store_obj = Store(0) #To get status of the product
                     var1 = sys.argv[2]  # Product name
                     print("\nCurrent Product Status\n")
                     store_obj.get_data(var1)
