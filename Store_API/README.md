@@ -1,6 +1,6 @@
 # API for buying and checking the status of products
 
-##Implement an API for checking the status in the shop
+## Implement an API for checking the status in the shop
 
 1.The command to print the status of the shop can be given as below.
 
@@ -10,7 +10,7 @@ or
 
 $python3 Transaction.py --shopstatus
 
-####Output
+#### Output
 
 Status of the Shop
 
@@ -23,7 +23,7 @@ Status of the Shop
 
 
 
-##Implement an API for buying a product
+## Implement an API for buying a product
 
 $python3 Transaction.py -b <product_name> <buy_amount>
 
@@ -36,7 +36,7 @@ Example:
 $python3 Transaction.py -b Orange 40
 
 
-####Output
+#### Output
 Current Product Status
 
 /Orange/65
