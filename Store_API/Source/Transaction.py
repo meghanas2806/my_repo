@@ -9,14 +9,8 @@ import sys
 sys.path.append(".")
 from Store import Store
 
-"""
-class Transaction:
-    def __init__(
-            self,status,purchase):
-        self.status = status
-        self.purchase = purchase
-""" 
 
+#if __name__ == "__main__":
 print("Products Available\n")
 
 store_obj = Store(1)
@@ -32,6 +26,8 @@ store_obj.get_data(var1)
 
 var2 = int(input("Enter the amount to purchase: "))
 
-store_obj.put_data(store_obj.initial_amount-var2)
+store_obj.put_data(var2)
  
-store_obj.get_data(var1)
+#store_obj.get_data(var1)
+
+store_obj.get_purchase_data()

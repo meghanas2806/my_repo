@@ -21,19 +21,19 @@ class Store:
             fileObject = open("products.json", "r")
             jsonContent = fileObject.read()
             aList = json.loads(jsonContent)
-            print("Product chosen is: ",self.product)
             self.initial_amount = aList[self.product]["amount"]
-            print("Amount: ",self.initial_amount )
+            print('/'+self.product+'/'+str(aList[self.product]["amount"]))
             fileObject.close()
        
     
     def put_data(
-            self, final_state):
-        self.final_state = final_state
+            self, buy_amount):
+        self.buy_amount = buy_amount
         with open("products.json",'r+') as fileObject:
-                  # First we load existing data into a dict.
+                # First we load existing data into a dict.
                 aList = json.load(fileObject)
                 # Join new_data with file_data inside emp_details
+                self.final_state = self.initial_amount - self.buy_amount
                 aList[self.product].update({"amount":self.final_state})
                 # Sets file's current position at offset.
                 fileObject.seek(0)
@@ -47,6 +47,12 @@ class Store:
             jsonContent = fileObject.read()
             aList = json.loads(jsonContent)
             for i in aList["Products"]:
-                print(i)
+                print('/'+i+'/'+str(aList[i]["amount"]))
             fileObject.close()
-        
+    
+    def get_purchase_data(
+            self):
+        if(self.status==1):                    
+            print('/'+self.product+'/'+str(self.initial_amount)+'/'
+                  +str(self.buy_amount)+'/'+str(self.final_state))
+            
